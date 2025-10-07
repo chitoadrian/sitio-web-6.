@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol EC | Eliminatorias 2024-2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <meta name="description" content="Sitio sobre la Selección de Ecuador: partidos de eliminatorias 2024-2025, resultados, plantilla y quiénes somos.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#inicio" class="brand" aria-label="Ir al inicio">Tri Pasión</a>
+            <nav class="nav" aria-label="Navegación principal">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#partidos">Partidos</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#plantilla">Plantilla</a></li>
+                    <li><a href="#quienes">Quiénes somos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Selección de Ecuador — Eliminatorias 2024-2025</h1>
+                <p>Sigue los partidos, resultados y la plantilla de la Tri rumbo al próximo mundial.</p>
+                <a class="btn-primary" href="#partidos">Ver próximos partidos</a>
+            </div>
+        </section>
+
+        <section id="partidos" class="section">
+            <div class="container">
+                <h2>Partidos</h2>
+                <div class="filters">
+                    <label>
+                        Estado
+                        <select id="filtro-estado">
+                            <option value="todos" selected>Todos</option>
+                            <option value="jugados">Jugados</option>
+                            <option value="pendientes">Pendientes</option>
+                        </select>
+                    </label>
+                    <label>
+                        Año
+                        <select id="filtro-anio">
+                            <option value="todos" selected>Todos</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </label>
+                    <label>
+                        Rival
+                        <input id="filtro-rival" type="search" placeholder="Buscar rival..." aria-label="Buscar por rival">
+                    </label>
+                </div>
+                <div id="partidos-list" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="resultados" class="section alt">
+            <div class="container">
+                <h2>Resultados</h2>
+                <div id="resultados-list" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="plantilla" class="section">
+            <div class="container">
+                <h2>Plantilla</h2>
+                <div class="filters">
+                    <label>
+                        Posición
+                        <select id="filtro-posicion">
+                            <option value="todas" selected>Todas</option>
+                            <option value="Portero">Portero</option>
+                            <option value="Defensa">Defensa</option>
+                            <option value="Mediocampista">Mediocampista</option>
+                            <option value="Delantero">Delantero</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="plantilla-list" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="quienes" class="section alt">
+            <div class="container">
+                <h2>Quiénes somos</h2>
+                <p>Hola, soy un estudiante amante del fútbol ecuatoriano. Este sitio es un proyecto personal para recopilar y compartir información de los partidos de eliminatorias de Ecuador entre 2024 y 2025, con resultados, datos clave y una mirada a la plantilla de nuestra Tri.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Hecho con pasión por la Tri · 2024-2025</p>
+            <a href="#inicio" class="to-top" aria-label="Volver al inicio">↑</a>
+        </div>
+    </footer>
+</body>
+</html>
+
